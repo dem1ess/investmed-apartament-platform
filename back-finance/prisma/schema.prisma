@@ -1,0 +1,107 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+model User {
+  id                String   @id @default(cuid())
+  createdAt         DateTime @default(now()) @map("created_at")
+  updateAt          DateTime @updatedAt @map("update_at")
+  googleId          String?  @unique @map("google_id")
+  role              Role // Роль пользователя ("user" или "admin")
+  balance           Float
+  email             String   @unique
+  password          String
+  firstName         String?  @map("first_name")
+  lastName          String?  @map("last_name")
+  documentType      String?  @map("documet_type")
+  country           String?
+  documentPhoto1Url String?  @map("document_photo1_url")
+  documentPhoto2Url String?  @map("document_photo2_url")
+  selfieUrl         String?  @map("selfie_url")
+  isVerif           Boolean  @map("is_verif")
+  isEmailVerif      Boolean  @default(false) @map("is_email_verif")
+  wallet            String?  // Новый столбец для адреса кошелька
+
+  purchase    Purchase[]
+  transaction Transaction[]
+}
+
+model BankDetails {
+  id            String   @id @default(cuid())
+  accountName   String
+  accountNumber String
+  routingNumber String
+  bankName      String
+  bankAddress   String
+}
+
+
+model Purchase {
+  id         String   @id @default(cuid())
+  createdAt  DateTime @default(now()) @map("created_at")
+  tokens     Int
+  totalCost  Int
+  property   Property @relation(fields: [propertyId], references: [id])
+  propertyId String   @map("property_id")
+  buyer      User     @relation(fields: [buyerId], references: [id])
+  buyerId    String   @map("buyer_id")
+}
+
+model Property {
+  id                 String     @id @default(cuid())
+  name               String
+  description        String
+  price              Int // Prise of all apart
+  tokens             Int // all count tokens
+  priceToken         Int        @map("price_token")
+  availableTokens    Int        @map("available_tokens") // Доступное количество токенов
+  landArea           Float      @map("land_area")
+  houseArea          Float      @map("house_aria")
+  distanceToSea      String     @map("distance_to_sea")
+  videoUrl           String     @map("video_url")
+  photoUrls          String[]   @map("photo_urls")
+  roi                Float
+  location1          String     @map("location_1")
+  location2          String     @map("location_2")
+  mainLocation       String     @map("main_location")
+  documentUrls       String[]   @map("document_urls")
+  annualGrowthRate   Float      @map("annual_growth_rate")
+  yearOfCompletion   Int        @map("year_of_completion")
+  legalFees          Float      @map("legal_fees")
+  rentPerYear        Int        @map("rent_per_year")
+  facilityManagement Float      @map("facility_management")
+  bookingLink        String     @map("booking_link")
+  purchase           Purchase[]
+}
+
+enum TransactionStatus {
+  PENDING
+  COMPLETE
+  ERROR
+  CANCELLED
+  EXPIRED
+}
+
+model Transaction {
+  id                String            @id @default(cuid())
+  createdAt         DateTime          @default(now()) @map("created_at")
+  updateAt          DateTime          @updatedAt @map("update_at")
+  amount            Int // Сумма транзакции
+  transactionStatus TransactionStatus // Статусы транзакции ("PENDING", "COMPLETE", "error", "cancelled", "expired")
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String @map("user_id")
+}

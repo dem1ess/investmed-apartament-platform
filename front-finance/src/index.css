@@ -1,0 +1,12 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body {
+	overflow: auto; /* или scroll, или overlay */
+	font-family: 'Manrope', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	background-color: #001619 !important;
+}

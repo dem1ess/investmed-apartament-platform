@@ -1,0 +1,283 @@
+.WalletConnectMessage_root__zFrmg {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: var(--font-family--primary);
+	color: var(--color-text-secondary);
+	margin-top: 80px;
+}
+.WalletConnectMessage_root__zFrmg p {
+	margin: 0;
+}
+.WalletConnectMessage_header__vGtSz {
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 16px;
+}
+.WalletConnectMessage_description__x80k0 {
+	font-size: 14px;
+	font-weight: 400;
+	padding-bottom: 24px;
+	text-align: center;
+}
+.WalletConnectMessage_connectButton__m5Fkh {
+	background: var(--mpColorPrimary);
+}
+.styles_root__9AgzJ {
+	font-family: var(--font-family--primary);
+}
+.styles_tokenSellOrdersModal__ji7EK {
+	width: 70vw;
+}
+.styles_tokenSellOrdersModal__ji7EK p {
+	margin: 0;
+}
+.styles_tokenSellOrdersHeader__Em1rW {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.styles_tokenSellOrdersHeaderText__e1yL0 {
+	font-size: 18px;
+	font-weight: 700;
+}
+.styles_multiModalHeader__Kk_9t:hover {
+	cursor: pointer;
+}
+.styles_arrowIcon__VJKWe path {
+	stroke: var(--mpColorPrimary);
+}
+.styles_headerWrapper__niPRa {
+	display: flex;
+	margin-bottom: 12px;
+}
+.styles_buttons__FI_t5 {
+	display: flex;
+	justify-content: center;
+	margin-top: 12px;
+}
+.styles_property__bN7KE {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 10px 18px 24px;
+}
+.styles_noProperty__UqCBV {
+	margin: 10px 18px 24px;
+}
+.styles_totalPropertyInfo__6zLVl {
+	display: flex;
+}
+.styles_header__4oU00 {
+	display: flex;
+	justify-content: space-between;
+}
+.styles_ordersButton__cWCGc {
+	background: #fff;
+	color: var(--color-primary);
+}
+.styles_ordersButtonText__X5g_z,
+.styles_ordersButton__cWCGc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.styles_continueArrow__nLI0A {
+	transform: rotate(270deg);
+	margin-left: 6px;
+}
+.styles_pnlWrapper__OvjGV {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 8px 0 16px;
+}
+.styles_profitImage__LiM__ {
+	margin-right: 3px;
+}
+.styles_pnl__2uZTz {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 700;
+	color: #16c784;
+}
+.styles_lastSevenDays__Ii8Zv {
+	font-size: 14px;
+	font-weight: 600;
+}
+.styles_lastSevenDays__Ii8Zv,
+.styles_pnlTerm__G_BAq {
+	color: var(--color-text-secondary);
+}
+.styles_statsButton__sV4lt {
+	width: 100%;
+	background: var(--color--secondary-bg);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.styles_statsButton__sV4lt p {
+	margin: 0;
+	color: var(--color-primary);
+	font-size: 14px;
+	font-weight: 600;
+	padding-left: 10px;
+}
+.styles_navigationHome__Nxi8f {
+	color: var(--color-text-secondary);
+	font-weight: 700;
+}
+.styles_navigationAsset__H1Dde {
+	font-weight: 700;
+}
+.styles_totalPropertyInfoWrapper__YBzgu {
+	margin-left: 18px;
+	margin-top: 24px;
+}
+.styles_totalRentInfoWrapper__iy9mq {
+	width: 36%;
+	margin-right: 18px;
+}
+.styles_tableWrapper__ZU9fr {
+	display: flex;
+	justify-content: center;
+}
+.styles_totalRentInfo__YVxJ0 {
+	background-color: var(--color--primary-bg);
+	border: 1px solid var(--color--secondary-bg);
+	border-radius: 16px 16px 0 0;
+	padding: 24px;
+	text-align: center;
+}
+.styles_balanceGraphic__nu_5v {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.styles_rentBalanceClaimWrapper__wgt6_,
+.styles_statisticGraphic__opI4R {
+	width: 100%;
+}
+.styles_statisticGraphic__opI4R:hover {
+	cursor: pointer;
+}
+.styles_modalGraphics__wSrYP {
+	width: 80%;
+	max-height: 600px !important;
+	overflow: scroll;
+	padding: 0 !important;
+}
+.styles_graphicWrapper__zYOF7 {
+	height: 100%;
+}
+.styles_totalRentInfo_text__B9Kfr {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 5px;
+}
+.styles_pageMenu__xLJCC {
+	flex-shrink: 0;
+	width: 240px;
+}
+.styles_navigation__XqUXw {
+	font-size: 12px;
+}
+.styles_assetOverview_Text__4lcI1 {
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 24px;
+	width: 36%;
+}
+.styles_questBanner__td78f {
+	width: 64%;
+}
+.styles_claimAllButton__EJFua {
+	background-color: var(--mpColorPrimary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 5px;
+}
+.styles_claimAllButton__EJFua p {
+	margin: 0;
+}
+.styles_arrowWrapper__WyEcI {
+	width: 15px;
+	height: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color--primary-bg);
+	transform: rotate(90deg);
+	border-radius: 50%;
+	margin-right: 8px;
+}
+.styles_totalRentBalance_text__FdvTf {
+	font-size: 36px;
+	font-weight: 700;
+	margin: 0;
+}
+.styles_rentBalanceClaim__JxvCu {
+	text-align: center;
+}
+.styles_accountDetailWrapper__ryHiC {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px dashed var(--color--border);
+	padding-top: 16px;
+	margin-bottom: 24px;
+}
+.styles_accountDetail__a_Yun {
+	display: flex;
+}
+.styles_orderHistory__lPl6w {
+	margin-top: 8px;
+}
+.styles_tabs__Gfs9B {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 12px;
+}
+.styles_nanoLoader__BrVlI {
+	margin-top: 20vh;
+}
+.styles_propertyWrapper__ljQ78 {
+	width: 64%;
+}
+@media (max-width: 1024px) {
+	.styles_root__9AgzJ {
+		flex-direction: column;
+		align-items: center;
+		padding: 0 10px;
+	}
+	.styles_navigation__XqUXw {
+		display: none;
+	}
+	.styles_totalPropertyInfo__6zLVl {
+		flex-direction: column;
+	}
+	.styles_totalPropertyInfoWrapper__YBzgu {
+		margin-left: 0;
+	}
+	.styles_totalRentInfo__YVxJ0 {
+		width: 100%;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-radius: 12px;
+		height: 100%;
+	}
+	.styles_rentBalanceClaim__JxvCu {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.styles_claimAllButton__EJFua {
+		margin-top: 12px;
+	}
+}
+/*# sourceMappingURL=49827ac4b94a5338.css.map*/
